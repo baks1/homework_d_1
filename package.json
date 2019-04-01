@@ -6,6 +6,7 @@
   "homepage": "https://baks1.github.io/homework_d_1/",
   "scripts": {
     "build": "webpack --config webpack.config.js",
+    "predeplay": "npm run build",
     "deploy": "gh-pages -d build",
     "watch": "webpack --config webpack.config.js --watch"
   },
