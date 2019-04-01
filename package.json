@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "private": true,
-  "homepage": "https://github.com/baks1/homework_d_1.git",
+  "homepage": "https://baks1.github.io/homework_d_1/",
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "deploy": "gh-pages -d build",
