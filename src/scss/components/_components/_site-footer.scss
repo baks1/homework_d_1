@@ -1,0 +1,28 @@
+.site-footer {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  &__text {
+    font-family: $lato;
+    color: $drinks-color;
+  }
+  &__text a {
+    text-decoration: none;
+  }
+
+  &__right {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__link {
+    color: $drinks-color;
+    padding-left: 20px;
+  }
+
+  &__icon:hover {
+    color: $color-black;
+  }
+}

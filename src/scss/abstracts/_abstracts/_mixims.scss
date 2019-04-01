@@ -1,0 +1,11 @@
+@mixin boxBorder($s: 1px, $l: solid, $c: black) {
+  border: $s $l $c;
+}
+
+@mixin setTranslate($x: -50%, $y: -50%) {
+  transform: translate($x, $y);
+}
+
+@mixin aOffDecoration() {
+  text-decoration: none;
+}

@@ -1,0 +1,32 @@
+$w: 70%;
+$p-bottom: 3px;
+
+.site-nav {
+  width: $w;
+  margin: 0 auto;
+  padding: 100px 0 50px 0;
+  font-family: $lato;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  &__item {
+    padding: 15px 0;
+  }
+
+  &__link {
+    padding-bottom: $p-bottom;
+    transition: $delay-2;
+    @include aOffDecoration();
+  }
+
+  &__link:hover {
+    border-bottom: 1px solid black;
+    color: $color-black;
+  }
+
+  &__link--menu-color {
+    color: $drinks-color;
+  }
+}

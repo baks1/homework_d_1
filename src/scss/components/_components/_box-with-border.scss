@@ -1,0 +1,24 @@
+$w: 100px;
+$h: 40px;
+$top: 0;
+$left: 8%;
+$fs: 20px;
+
+.box-with-border {
+  position: absolute;
+  top: $top;
+  left: $left;
+  width: $w;
+  height: $h;
+  line-height: $h;
+  text-align: center;
+  @include boxBorder(2px);
+  @include setTranslate();
+
+  &__text {
+    font-family: $lato;
+    font-size: $fs;
+    color: $color-black;
+    @include aOffDecoration();
+  }
+}

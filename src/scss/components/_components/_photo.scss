@@ -1,0 +1,68 @@
+$photo-width: 70%;
+$columns: 3;
+$columns-size: 2fr;
+$rows: 2;
+$rows-size: 20vw;
+$gap: 20px;
+$img-width: 100%;
+$img-height: 100%;
+$fs: 36px;
+$line-h: 150px;
+
+.photo {
+  width: $photo-width;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat($columns, $columns-size);
+  grid-template-rows: repeat($rows, $rows-size);
+  grid-gap: $gap;
+  padding-bottom: 100px;
+
+  &--text-center {
+    text-align: center;
+  }
+
+  &__item {
+    position: relative;
+    transition: $delay-2;
+  }
+
+  &__item:hover {
+    @include boxBorder(6px, solid, rgb(230, 209, 227));
+  }
+
+  &__item--hide-bg {
+    overflow: hidden;
+  }
+
+  &__img {
+    width: $img-width;
+    height: $img-height;
+  }
+
+  &__img--size-transform {
+    transform: scale(1.8);
+    transform-origin: 65% 10%;
+  }
+
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: $arial;
+    font-weight: bold;
+    @include setTranslate;
+  }
+
+  &__caption--color-white {
+    color: $color-white;
+  }
+
+  &__caption--big {
+    font-size: $fs;
+  }
+
+  &__caption--space-between-line {
+    line-height: $line-h;
+  }
+}
